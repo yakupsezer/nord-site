@@ -92,7 +92,7 @@ function Logo({
   href = null
 }) {
   const inner = /*#__PURE__*/React.createElement("img", {
-    src: `${BASE}assets/nord-logo-final.png`,
+    src: `${BASE}assets/nord-logo-tescil-04.png`,
     alt: "Nord",
     className: "logo-img"
   });

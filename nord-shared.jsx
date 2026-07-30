@@ -24,7 +24,7 @@ function Mark({ className = '' }) {
 }
 
 function Logo({ size = '', href = null }) {
-  const inner = <img src={`${BASE}assets/nord-logo-final.png`} alt="Nord" className="logo-img"/>;
+  const inner = <img src={`${BASE}assets/nord-logo-tescil-04.png`} alt="Nord" className="logo-img"/>;
   const cls = `logo ${size}`;
   return href !== null ? <a href={href} className={cls} aria-label="Nord">{inner}</a> : <span className={cls} aria-label="Nord">{inner}</span>;
 }

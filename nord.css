@@ -443,7 +443,7 @@ section{position:relative}
 
 /* fix: never distort the artwork — size by height only, no negative margins on the img */
 .logo{display:inline-flex;align-items:center;margin:0}
-.logo .logo-img,.logo.sm .logo-img,.logo.lg .logo-img{margin:0;flex:none;width:auto;object-fit:contain}
+.logo .logo-img,.logo.sm .logo-img,.logo.lg .logo-img{margin:0;flex:none;width:auto;aspect-ratio:1754/594;object-fit:contain}
 .logo .logo-img{height:40px}
 .logo.sm .logo-img{height:34px}
 .logo.lg .logo-img{height:clamp(76px,8vw,112px)}
