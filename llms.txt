@@ -1,0 +1,62 @@
+# Nord Kurumsal Hizmetler
+
+> Nord, regüle finans kurumlarının ve teknoloji şirketlerinin dışarıdan aldığı tüm destek
+> hizmetlerini tek çatı altında toplayan kurumsal çözüm ortağıdır. Altı hizmet ailesini tek
+> sözleşme, tek fatura ve tek muhatap altında yöneterek işletme giderinde %18–34 tasarruf sağlar.
+
+Nord bir hizmet sağlayıcı değil, bir konsolidasyon modelidir. Bir kurum destek hizmetleri için
+ortalama yedi ilâ on bir ayrı tedarikçiyle çalışır; Nord bu sayıyı bire indirir. Tasarruf, daha
+ucuz tedarikçi bulmaktan değil tedarik yapısının kendisini değiştirmekten doğar.
+
+- Kuruluş: 2025, Ümraniye / İstanbul
+- Odak: SPK, BDDK ve TCMB düzenlemesi altındaki kurumlar ve teknoloji şirketleri
+- Taahhüt: sözleşmeye yazılan tasarruf oranı, 30 gün ihbarla fesih, uyum sorumluluğu Nord'da
+- İletişim: kurumsal@nord.services · +90 850 885 15 00
+- LinkedIn: https://www.linkedin.com/company/nordservices/
+
+## Hizmet aileleri
+
+- [İnsan Kaynakları](https://nord.services/hizmetler/insan-kaynaklari.html): Bordro outsource, özlük, işe alım,
+  performans ve ücret yönetimi, işten ayrılma, yetenek değerlendirme. 7 hizmet, tipik tasarruf %22–31.
+- [Filo & Yakıt](https://nord.services/hizmetler/filo-yakit.html): Operasyonel kiralama, araç takip, yakıt ve HGS
+  yönetimi, bakım ve hasar süreçleri. Filoyu bilançodan çıkarır. 5 hizmet, tipik tasarruf %19–28.
+- [Yan Hak Kartları](https://nord.services/hizmetler/yan-haklar.html): Yemek, hediye, market ve akaryakıt kartları,
+  prim ve puan programları. Vergi istisnasıyla işveren maliyetini düşürür. 4 hizmet, tasarruf %12–19.
+- [Sağlık & Sigorta](https://nord.services/hizmetler/saglik-sigorta.html): Grup sağlık ve tamamlayıcı sigorta,
+  işyeri hekimliği ve İSG, EAP, grup BES, wellness. 6 hizmet, tipik tasarruf %15–24.
+- [Seyahat Yönetimi](https://nord.services/hizmetler/seyahat.html): Uçak/otel/araç rezervasyonu, seyahat politikası
+  ve onay akışı, vize operasyonu, kongre organizasyonu. 4 hizmet, tipik tasarruf %17–26.
+- [Teknopark](https://nord.services/hizmetler/teknopark.html): Ar-Ge proje yazımı, portal yönetimi, denetime
+  hazırlık, fikri mülkiyet, nitelikli personel tedariki. 7 hizmet, tipik tasarruf %24–38.
+
+## Odak segmentler
+
+Menkul değerler ve aracı kurumlar · portföy yönetim şirketleri · ödeme ve elektronik para
+kuruluşları · fintech girişimleri · teknoloji şirketleri · dijital bankalar.
+Bu altı segment dışındaki kurumları kapsam dışı bırakır ve yönlendirir.
+
+## Sayfalar
+
+- [Ana sayfa](https://nord.services/): model özeti, tasarruf hesaplayıcısı, referanslar
+- [Yaklaşım](https://nord.services/yaklasim.html): Nord Modeli, dağınık vs konsolide tedarik karşılaştırması,
+  dört adımlı geçiş süreci, sözleşme taahhütleri
+- [Hizmetler](https://nord.services/hizmetler.html): altı aile, 33 hizmet, hacim bazlı fiyat mantığı
+- [Odak](https://nord.services/odak.html): segment bazlı regülasyon yükü
+- [Referanslar](https://nord.services/referanslar.html): Pionr, Tahsildar, Pratik İşlem, One Portföy, Destek Yatırım
+- [Hakkımızda](https://nord.services/hakkimizda.html): misyon, kuruluş hikâyesi, ilkeler, ofis
+- [Nord Panel](https://nord.services/panel.html): geliştirme aşamasındaki gider görünürlüğü paneli
+- [Blog](https://nord.services/blog.html): destek hizmeti maliyeti, mevzuat ve teşvikler üzerine yazılar
+
+## Blog yazıları
+
+- [SGK teşvikleri: finans ve teknoloji şirketleri için 2026 haritası](https://nord.services/blog/sgk-tesvikleri.html) — Teşvikler, 2026-07-24, 9 dk okuma
+- [Destek hizmetlerinin faturada görünmeyen maliyeti](https://nord.services/blog/destek-hizmetleri-gizli-maliyeti.html) — Gider yönetimi, 2026-07-14, 7 dk okuma
+- [Regüle kurumlarda dış kaynak: nereye kadar mümkün?](https://nord.services/blog/regule-kurumlarda-outsource.html) — Regülasyon, 2026-07-02, 8 dk okuma
+- [Kullanılmayan teşvik, ödenmiş vergidir](https://nord.services/blog/tesvik-ve-ar-ge.html) — Teşvikler, 2026-06-18, 6 dk okuma
+- [Yan haklarda maliyeti düşürmek, paketi küçültmek değildir](https://nord.services/blog/yan-haklarda-maliyet-dengesi.html) — Yan haklar, 2026-06-05, 5 dk okuma
+
+## Hukuki
+
+- [KVKK Aydınlatma Metni](https://nord.services/kvkk.html)
+- [Gizlilik Politikası](https://nord.services/gizlilik.html)
+- [Çerez Politikası](https://nord.services/cerez-politikasi.html)

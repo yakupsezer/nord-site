@@ -1,0 +1,280 @@
+[
+ {
+  "path": "index.html",
+  "gvars": {
+   "NORD_BASE": "",
+   "NORD_IS_HOME": true
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-home.js"
+  ]
+ },
+ {
+  "path": "Nord.html",
+  "gvars": {
+   "NORD_BASE": "",
+   "NORD_IS_HOME": true
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-home.js"
+  ]
+ },
+ {
+  "path": "hizmetler.html",
+  "gvars": {
+   "NORD_BASE": ""
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-page-hizmetler.js"
+  ]
+ },
+ {
+  "path": "yaklasim.html",
+  "gvars": {
+   "NORD_BASE": ""
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-page-yaklasim.js"
+  ]
+ },
+ {
+  "path": "odak.html",
+  "gvars": {
+   "NORD_BASE": ""
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-page-odak.js"
+  ]
+ },
+ {
+  "path": "referanslar.html",
+  "gvars": {
+   "NORD_BASE": ""
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-page-referanslar.js"
+  ]
+ },
+ {
+  "path": "panel.html",
+  "gvars": {
+   "NORD_BASE": ""
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-page-panel.js"
+  ]
+ },
+ {
+  "path": "hakkimizda.html",
+  "gvars": {
+   "NORD_BASE": ""
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-about.js"
+  ]
+ },
+ {
+  "path": "blog.html",
+  "gvars": {
+   "NORD_BASE": ""
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-blog-data.js",
+   "nord-shared.js",
+   "nord-page-blog.js"
+  ]
+ },
+ {
+  "path": "kvkk.html",
+  "gvars": {
+   "NORD_BASE": "",
+   "NORD_PAGE": "kvkk"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-legal-data.js",
+   "nord-shared.js",
+   "nord-page-legal.js"
+  ]
+ },
+ {
+  "path": "gizlilik.html",
+  "gvars": {
+   "NORD_BASE": "",
+   "NORD_PAGE": "gizlilik"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-legal-data.js",
+   "nord-shared.js",
+   "nord-page-legal.js"
+  ]
+ },
+ {
+  "path": "cerez-politikasi.html",
+  "gvars": {
+   "NORD_BASE": "",
+   "NORD_PAGE": "cerez"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-legal-data.js",
+   "nord-shared.js",
+   "nord-page-legal.js"
+  ]
+ },
+ {
+  "path": "hizmetler/insan-kaynaklari.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_SERVICE": "ik"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-service.js"
+  ]
+ },
+ {
+  "path": "hizmetler/filo-yakit.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_SERVICE": "filo"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-service.js"
+  ]
+ },
+ {
+  "path": "hizmetler/yan-haklar.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_SERVICE": "yanhak"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-service.js"
+  ]
+ },
+ {
+  "path": "hizmetler/saglik-sigorta.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_SERVICE": "saglik"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-service.js"
+  ]
+ },
+ {
+  "path": "hizmetler/seyahat.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_SERVICE": "seyahat"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-service.js"
+  ]
+ },
+ {
+  "path": "hizmetler/teknopark.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_SERVICE": "teknopark"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-shared.js",
+   "nord-service.js"
+  ]
+ },
+ {
+  "path": "blog/sgk-tesvikleri.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_POST": "sgk-tesvikleri"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-blog-data.js",
+   "nord-shared.js",
+   "nord-page-post.js"
+  ]
+ },
+ {
+  "path": "blog/destek-hizmetleri-gizli-maliyeti.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_POST": "destek-hizmetleri-gizli-maliyeti"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-blog-data.js",
+   "nord-shared.js",
+   "nord-page-post.js"
+  ]
+ },
+ {
+  "path": "blog/regule-kurumlarda-outsource.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_POST": "regule-kurumlarda-outsource"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-blog-data.js",
+   "nord-shared.js",
+   "nord-page-post.js"
+  ]
+ },
+ {
+  "path": "blog/tesvik-ve-ar-ge.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_POST": "tesvik-ve-ar-ge"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-blog-data.js",
+   "nord-shared.js",
+   "nord-page-post.js"
+  ]
+ },
+ {
+  "path": "blog/yan-haklarda-maliyet-dengesi.html",
+  "gvars": {
+   "NORD_BASE": "../",
+   "NORD_POST": "yan-haklarda-maliyet-dengesi"
+  },
+  "scripts": [
+   "nord-data.js",
+   "nord-blog-data.js",
+   "nord-shared.js",
+   "nord-page-post.js"
+  ]
+ }
+]
