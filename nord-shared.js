@@ -91,16 +91,11 @@ function Logo({
   size = '',
   href = null
 }) {
-  const inner = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("img", {
-    src: `${BASE}assets/nord-logo-white.png`,
+  const inner = /*#__PURE__*/React.createElement("img", {
+    src: `${BASE}assets/nord-logo-tescil-05.png`,
     alt: "Nord",
-    className: "logo-img on-dark"
-  }), /*#__PURE__*/React.createElement("img", {
-    src: `${BASE}assets/nord-logo-black.png`,
-    alt: "",
-    "aria-hidden": "true",
-    className: "logo-img on-light"
-  }));
+    className: "logo-img"
+  });
   const cls = `logo ${size}`;
   return href !== null ? /*#__PURE__*/React.createElement("a", {
     href: href,
