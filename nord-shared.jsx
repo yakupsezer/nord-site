@@ -153,8 +153,32 @@ function ServiceIndexList() {
 
 function CTASection() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
   const [f, setF] = useState({ name:'', company:'', size:'250–500', email:'', phone:'' });
   const up = (k) => (e) => setF(s => ({...s, [k]: e.target.value}));
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    if (!f.name.trim() || !f.company.trim() || !f.email.trim()) {
+      setError('Lütfen zorunlu alanları doldurun.');
+      return;
+    }
+    setSending(true);
+    try {
+      const res = await fetch('https://tkmqsodhppxphicxkbpu.supabase.co/functions/v1/contact-webhook', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: f.name, company: f.company, size: f.size, phone: f.phone, email: f.email })
+      });
+      if (!res.ok) throw new Error('fail');
+      setSent(true);
+    } catch (_) {
+      setError('Bir hata oluştu, lütfen tekrar deneyin.');
+    } finally {
+      setSending(false);
+    }
+  };
   return (
     <section id="iletisim" className="cta sec">
       <div className="wrap">
@@ -174,9 +198,10 @@ function CTASection() {
               <a href={LINKEDIN} target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
-          <form className="form" onSubmit={(e) => { e.preventDefault(); setSent(true); }}>
+          <form className="form" onSubmit={handleSubmit}>
             {!sent ? <>
               <h3>Analiz talebi</h3>
+              {error && <p className="form-error">{error}</p>}
               <div className="field"><label>Ad Soyad</label><input required value={f.name} onChange={up('name')} placeholder="Mehmet Yılmaz"/></div>
               <div className="field"><label>Şirket</label><input required value={f.company} onChange={up('company')} placeholder="Şirket adı"/></div>
               <div className="row-2">
@@ -188,7 +213,7 @@ function CTASection() {
                 <div className="field"><label>Telefon</label><input value={f.phone} onChange={up('phone')} placeholder="0 5__ ___ __ __"/></div>
               </div>
               <div className="field"><label>Kurumsal e-posta</label><input required type="email" value={f.email} onChange={up('email')} placeholder="ad@sirket.com"/></div>
-              <button className="btn btn-primary btn-lg btn-block" type="submit">Ücretsiz analiz iste <Arrow size={15}/></button>
+              <button className="btn btn-primary btn-lg btn-block" type="submit" disabled={sending}>{sending ? 'Gönderiliyor…' : 'Ücretsiz analiz iste'} {!sending && <Arrow size={15}/>}</button>
               <p className="form-tos"><a href={`${BASE}kvkk.html`}>KVKK aydınlatma metnini</a> okuduğunuzu kabul edersiniz.</p>
             </> : <div className="form-ok">
               <span className="tick-lg"><Check size={24}/></span>
