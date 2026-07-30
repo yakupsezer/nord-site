@@ -435,10 +435,13 @@ section{position:relative}
 .logo:hover .logo-img{opacity:0.78;transition:opacity .2s}
 @media (max-width:600px){.logo .logo-img{height:44px}.logo.sm .logo-img{height:38px;margin:-7px -10px}}
 
-/* white artwork on dark surfaces, inverted on light surfaces */
-.panel-light .logo .logo-img{filter:brightness(0)}
+/* white artwork on dark surfaces, black artwork on light surfaces */
+.logo .logo-img.on-light{display:none}
+.panel-light .logo .logo-img.on-dark{display:none}
+.panel-light .logo .logo-img.on-light{display:block}
 @media print{
-  .logo .logo-img{filter:brightness(0)}
+  .logo .logo-img.on-dark{display:none}
+  .logo .logo-img.on-light{display:block}
 }
 
 /* fix: never distort the artwork — size by height only, no negative margins on the img */
