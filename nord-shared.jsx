@@ -42,7 +42,7 @@ function Nav({ active = '' }) {
   ];
   return (
     <nav className={`nav ${open ? 'open' : ''}`}>
-      <Logo size="sm" href={HOME || '#top'}/>
+      <Logo size="sm" href="/"/>
       <ul className="nav-links">
         {links.map(([k,t,h]) => (
           <li key={k}><a href={BASE + h} className={active === k ? 'on' : ''}>{t}</a></li>
@@ -67,7 +67,7 @@ function Nav({ active = '' }) {
 function Crumb({ here }) {
   return (
     <div className="wrap">
-      <div className="crumb"><a href={HOME || '#top'}>Nord</a><span>/</span><span style={{color:'var(--text-2)'}}>{here}</span></div>
+      <div className="crumb"><a href="/">Nord</a><span>/</span><span style={{color:'var(--text-2)'}}>{here}</span></div>
     </div>
   );
 }
@@ -231,7 +231,7 @@ function Footer() {
       <div className="wrap">
         <div className="foot-top">
           <div className="foot-brand">
-            <Logo href={HOME || '#top'}/>
+            <Logo href="/"/>
             <p>Regüle finans kurumlarının ve teknoloji şirketlerinin dışarıdan aldığı tüm destek hizmetlerini tek çatı altında toplayarak işletme giderini düşüren kurumsal çözüm ortağı.</p>
           </div>
           <div className="foot-cols">

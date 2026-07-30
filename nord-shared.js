@@ -115,7 +115,7 @@ function Nav({
     className: `nav ${open ? 'open' : ''}`
   }, /*#__PURE__*/React.createElement(Logo, {
     size: "sm",
-    href: HOME || '#top'
+    href: "/"
   }), /*#__PURE__*/React.createElement("ul", {
     className: "nav-links"
   }, links.map(([k, t, h]) => /*#__PURE__*/React.createElement("li", {
@@ -158,7 +158,7 @@ function Crumb({
   }, /*#__PURE__*/React.createElement("div", {
     className: "crumb"
   }, /*#__PURE__*/React.createElement("a", {
-    href: HOME || '#top'
+    href: "/"
   }, "Nord"), /*#__PURE__*/React.createElement("span", null, "/"), /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--text-2)'
@@ -403,7 +403,7 @@ function Footer() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "foot-brand"
   }, /*#__PURE__*/React.createElement(Logo, {
-    href: HOME || '#top'
+    href: "/"
   }), /*#__PURE__*/React.createElement("p", null, "Reg\xFCle finans kurumlar\u0131n\u0131n ve teknoloji \u015Firketlerinin d\u0131\u015Far\u0131dan ald\u0131\u011F\u0131 t\xFCm destek hizmetlerini tek \xE7at\u0131 alt\u0131nda toplayarak i\u015Fletme giderini d\xFC\u015F\xFCren kurumsal \xE7\xF6z\xFCm orta\u011F\u0131.")), /*#__PURE__*/React.createElement("div", {
     className: "foot-cols"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", null, /*#__PURE__*/React.createElement("a", {
