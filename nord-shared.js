@@ -115,7 +115,7 @@ function Nav({
     className: `nav ${open ? 'open' : ''}`
   }, /*#__PURE__*/React.createElement(Logo, {
     size: "sm",
-    href: "/"
+    href: HOME || '#top'
   }), /*#__PURE__*/React.createElement("ul", {
     className: "nav-links"
   }, links.map(([k, t, h]) => /*#__PURE__*/React.createElement("li", {
@@ -158,7 +158,7 @@ function Crumb({
   }, /*#__PURE__*/React.createElement("div", {
     className: "crumb"
   }, /*#__PURE__*/React.createElement("a", {
-    href: "/"
+    href: HOME || '#top'
   }, "Nord"), /*#__PURE__*/React.createElement("span", null, "/"), /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--text-2)'
@@ -255,8 +255,6 @@ function ServiceIndexList() {
 }
 function CTASection() {
   const [sent, setSent] = useState(false);
-  const [sending, setSending] = useState(false);
-  const [error, setError] = useState('');
   const [f, setF] = useState({
     name: '',
     company: '',
@@ -268,28 +266,6 @@ function CTASection() {
     ...s,
     [k]: e.target.value
   }));
-  const handleSubmit = async e => {
-    e.preventDefault();
-    setError('');
-    if (!f.name.trim() || !f.company.trim() || !f.email.trim()) {
-      setError('Lütfen zorunlu alanları doldurun.');
-      return;
-    }
-    setSending(true);
-    const text = `*Yeni Analiz Talebi*\n\n👤 *Ad Soyad:* ${f.name}\n🏢 *Şirket:* ${f.company}\n📊 *Çalışan Sayısı:* ${f.size}\n📞 *Telefon:* ${f.phone || '–'}\n✉️ *E-posta:* ${f.email}`;
-    try {
-      await fetch('https://chat.googleapis.com/v1/spaces/AAQAcXZadcg/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=AogKCk_s4NiaSWGCKXq6oSIMq3xNcHieyRaqNzWU0Xw', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text })
-      });
-      setSent(true);
-    } catch (_) {
-      setError('Bir hata oluştu, lütfen tekrar deneyin.');
-    } finally {
-      setSending(false);
-    }
-  };
   return /*#__PURE__*/React.createElement("section", {
     id: "iletisim",
     className: "cta sec"
@@ -321,10 +297,11 @@ function CTASection() {
     rel: "noopener"
   }, "LinkedIn"))), /*#__PURE__*/React.createElement("form", {
     className: "form",
-    onSubmit: handleSubmit
-  }, !sent ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Analiz talebi"), error && /*#__PURE__*/React.createElement("p", {
-    className: "form-error"
-  }, error), /*#__PURE__*/React.createElement("div", {
+    onSubmit: e => {
+      e.preventDefault();
+      setSent(true);
+    }
+  }, !sent ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Analiz talebi"), /*#__PURE__*/React.createElement("div", {
     className: "field"
   }, /*#__PURE__*/React.createElement("label", null, "Ad Soyad"), /*#__PURE__*/React.createElement("input", {
     required: true,
@@ -361,9 +338,8 @@ function CTASection() {
     placeholder: "ad@sirket.com"
   })), /*#__PURE__*/React.createElement("button", {
     className: "btn btn-primary btn-lg btn-block",
-    type: "submit",
-    disabled: sending
-  }, sending ? 'G\xF6nderiliyor\u2026' : '\xDCcretsiz analiz iste', " ", !sending && /*#__PURE__*/React.createElement(Arrow, {
+    type: "submit"
+  }, "\xDCcretsiz analiz iste ", /*#__PURE__*/React.createElement(Arrow, {
     size: 15
   })), /*#__PURE__*/React.createElement("p", {
     className: "form-tos"
@@ -427,7 +403,7 @@ function Footer() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "foot-brand"
   }, /*#__PURE__*/React.createElement(Logo, {
-    href: "/"
+    href: HOME || '#top'
   }), /*#__PURE__*/React.createElement("p", null, "Reg\xFCle finans kurumlar\u0131n\u0131n ve teknoloji \u015Firketlerinin d\u0131\u015Far\u0131dan ald\u0131\u011F\u0131 t\xFCm destek hizmetlerini tek \xE7at\u0131 alt\u0131nda toplayarak i\u015Fletme giderini d\xFC\u015F\xFCren kurumsal \xE7\xF6z\xFCm orta\u011F\u0131.")), /*#__PURE__*/React.createElement("div", {
     className: "foot-cols"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", null, /*#__PURE__*/React.createElement("a", {
