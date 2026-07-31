@@ -255,8 +255,6 @@ function ServiceIndexList() {
 }
 function CTASection() {
   const [sent, setSent] = useState(false);
-  const [sending, setSending] = useState(false);
-  const [error, setError] = useState('');
   const [f, setF] = useState({
     name: '',
     company: '',
@@ -268,28 +266,6 @@ function CTASection() {
     ...s,
     [k]: e.target.value
   }));
-  const handleSubmit = async e => {
-    e.preventDefault();
-    setError('');
-    if (!f.name.trim() || !f.company.trim() || !f.email.trim()) {
-      setError('Lütfen zorunlu alanları doldurun.');
-      return;
-    }
-    setSending(true);
-    try {
-      const res = await fetch('https://tkmqsodhppxphicxkbpu.supabase.co/functions/v1/contact-webhook', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: f.name, company: f.company, size: f.size, phone: f.phone, email: f.email })
-      });
-      if (!res.ok) throw new Error('fail');
-      setSent(true);
-    } catch (_) {
-      setError('Bir hata oluştu, lütfen tekrar deneyin.');
-    } finally {
-      setSending(false);
-    }
-  };
   return /*#__PURE__*/React.createElement("section", {
     id: "iletisim",
     className: "cta sec"
@@ -321,10 +297,11 @@ function CTASection() {
     rel: "noopener"
   }, "LinkedIn"))), /*#__PURE__*/React.createElement("form", {
     className: "form",
-    onSubmit: handleSubmit
-  }, !sent ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Analiz talebi"), error && /*#__PURE__*/React.createElement("p", {
-    className: "form-error"
-  }, error), /*#__PURE__*/React.createElement("div", {
+    onSubmit: e => {
+      e.preventDefault();
+      setSent(true);
+    }
+  }, !sent ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Analiz talebi"), /*#__PURE__*/React.createElement("div", {
     className: "field"
   }, /*#__PURE__*/React.createElement("label", null, "Ad Soyad"), /*#__PURE__*/React.createElement("input", {
     required: true,
@@ -361,9 +338,8 @@ function CTASection() {
     placeholder: "ad@sirket.com"
   })), /*#__PURE__*/React.createElement("button", {
     className: "btn btn-primary btn-lg btn-block",
-    type: "submit",
-    disabled: sending
-  }, sending ? 'G\xF6nderiliyor\u2026' : '\xDCcretsiz analiz iste', " ", !sending && /*#__PURE__*/React.createElement(Arrow, {
+    type: "submit"
+  }, "\xDCcretsiz analiz iste ", /*#__PURE__*/React.createElement(Arrow, {
     size: 15
   })), /*#__PURE__*/React.createElement("p", {
     className: "form-tos"
