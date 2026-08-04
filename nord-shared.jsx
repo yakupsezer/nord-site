@@ -169,7 +169,6 @@ function CTASection() {
               <li><Check size={16}/> Analiz ücretsizdir, bir taahhüt gerektirmez</li>
             </ul>
             <div className="cta-reach">
-              <a href="tel:+908508851500">+90 850 885 15 00</a>
               <a href="mailto:kurumsal@nord.services">kurumsal@nord.services</a>
               <a href={LINKEDIN} target="_blank" rel="noopener">LinkedIn</a>
             </div>
@@ -253,7 +252,6 @@ function Footer() {
               <h4>İletişim</h4>
               <address><span>İnkılap Mah.</span><span>Dr. Adnan Büyükdeniz Cad.</span><span>2. Blok No:4, İç Kapı No:7</span><span>Ümraniye / İstanbul</span></address>
               <a href="mailto:kurumsal@nord.services">kurumsal@nord.services</a>
-              <a href="tel:+908508851500">+90 850 885 15 00</a>
               <a href={LINKEDIN} target="_blank" rel="noopener">LinkedIn</a>
               <a href={'#iletisim'} className="foot-cta">Ücretsiz gider analizi <Arrow size={13}/></a>
             </div>

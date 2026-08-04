@@ -152,7 +152,7 @@ function Office() {
           </article>
           <article className="lever">
             <h4>İletişim</h4>
-            <p><a href="tel:+908508851500" style={{display:'block'}}>+90 850 885 15 00</a><a href="mailto:kurumsal@nord.services" style={{display:'block'}}>kurumsal@nord.services</a><a href={LINKEDIN} target="_blank" rel="noopener" style={{display:'block'}}>LinkedIn</a></p>
+            <p><a href="mailto:kurumsal@nord.services" style={{display:'block'}}>kurumsal@nord.services</a><a href={LINKEDIN} target="_blank" rel="noopener" style={{display:'block'}}>LinkedIn</a></p>
           </article>
           <article className="lever">
             <h4>Çalışma saatleri</h4>

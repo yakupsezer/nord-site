@@ -13,7 +13,7 @@ window.NORD_LEGAL = {
     facts: [['Veri sorumlusu', 'Nord Kurumsal Hizmetler'], ['Kanun', '6698 sayılı KVKK'], ['Başvuru', 'kvkk@nord.services'], ['Yürürlük', 'Temmuz 2026']],
     sections: [{
       h: 'Veri sorumlusunun kimliği',
-      p: [`Kişisel verileriniz, veri sorumlusu sıfatıyla ${VS} ("Nord") tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve ilgili mevzuata uygun olarak işlenmektedir.`, `Adres: ${ADR}. İletişim: ${MAIL} · +90 850 885 15 00.`]
+      p: [`Kişisel verileriniz, veri sorumlusu sıfatıyla ${VS} ("Nord") tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve ilgili mevzuata uygun olarak işlenmektedir.`, `Adres: ${ADR}. İletişim: ${MAIL}.`]
     }, {
       h: 'İşlenen kişisel veri kategorileri',
       p: ['Nord, faaliyet konusu gereği iki farklı ilgili kişi grubunun verisini işler: web sitesi ziyaretçileri ve müşteri kurumların çalışanları.'],

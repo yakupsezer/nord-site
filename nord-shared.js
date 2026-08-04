@@ -288,8 +288,6 @@ function CTASection() {
   }), " Analiz \xFCcretsizdir, bir taahh\xFCt gerektirmez")), /*#__PURE__*/React.createElement("div", {
     className: "cta-reach"
   }, /*#__PURE__*/React.createElement("a", {
-    href: "tel:+908508851500"
-  }, "+90 850 885 15 00"), /*#__PURE__*/React.createElement("a", {
     href: "mailto:kurumsal@nord.services"
   }, "kurumsal@nord.services"), /*#__PURE__*/React.createElement("a", {
     href: LINKEDIN,
@@ -428,8 +426,6 @@ function Footer() {
   }, "Nord Panel")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", null, "\u0130leti\u015Fim"), /*#__PURE__*/React.createElement("address", null, /*#__PURE__*/React.createElement("span", null, "\u0130nk\u0131lap Mah."), /*#__PURE__*/React.createElement("span", null, "Dr. Adnan B\xFCy\xFCkdeniz Cad."), /*#__PURE__*/React.createElement("span", null, "2. Blok No:4, \u0130\xE7 Kap\u0131 No:7"), /*#__PURE__*/React.createElement("span", null, "\xDCmraniye / \u0130stanbul")), /*#__PURE__*/React.createElement("a", {
     href: "mailto:kurumsal@nord.services"
   }, "kurumsal@nord.services"), /*#__PURE__*/React.createElement("a", {
-    href: "tel:+908508851500"
-  }, "+90 850 885 15 00"), /*#__PURE__*/React.createElement("a", {
     href: LINKEDIN,
     target: "_blank",
     rel: "noopener"

@@ -171,11 +171,6 @@ function Office() {
   }, "\xDCmraniye / \u0130stanbul"))), /*#__PURE__*/React.createElement("article", {
     className: "lever"
   }, /*#__PURE__*/React.createElement("h4", null, "\u0130leti\u015Fim"), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("a", {
-    href: "tel:+908508851500",
-    style: {
-      display: 'block'
-    }
-  }, "+90 850 885 15 00"), /*#__PURE__*/React.createElement("a", {
     href: "mailto:kurumsal@nord.services",
     style: {
       display: 'block'
