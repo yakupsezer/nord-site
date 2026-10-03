@@ -153,8 +153,29 @@ function ServiceIndexList() {
 
 function CTASection() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [err, setErr] = useState('');
   const [f, setF] = useState({ name:'', company:'', size:'250–500', email:'', phone:'' });
   const up = (k) => (e) => setF(s => ({...s, [k]: e.target.value}));
+  const submit = async (e) => {
+    e.preventDefault();
+    if (sending) return;
+    setSending(true); setErr('');
+    try {
+      const res = await fetch(`${window.NORD_SUPABASE_URL}/functions/v1/contact-webhook`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${window.NORD_SUPABASE_KEY}` },
+        body: JSON.stringify(f),
+      });
+      const data = await res.json().catch(() => null);
+      if (!res.ok || !data || !data.success) throw new Error('send failed');
+      setSent(true);
+    } catch (_) {
+      setErr('Talebiniz gönderilemedi. Lütfen tekrar deneyin veya kurumsal@nord.services adresine yazın.');
+    } finally {
+      setSending(false);
+    }
+  };
   return (
     <section id="iletisim" className="cta sec">
       <div className="wrap">
@@ -173,7 +194,7 @@ function CTASection() {
               <a href={LINKEDIN} target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
-          <form className="form" onSubmit={(e) => { e.preventDefault(); setSent(true); }}>
+          <form className="form" onSubmit={submit}>
             {!sent ? <>
               <h3>Analiz talebi</h3>
               <div className="field"><label>Ad Soyad</label><input required value={f.name} onChange={up('name')} placeholder="Mehmet Yılmaz"/></div>
@@ -187,7 +208,8 @@ function CTASection() {
                 <div className="field"><label>Telefon</label><input value={f.phone} onChange={up('phone')} placeholder="0 5__ ___ __ __"/></div>
               </div>
               <div className="field"><label>Kurumsal e-posta</label><input required type="email" value={f.email} onChange={up('email')} placeholder="ad@sirket.com"/></div>
-              <button className="btn btn-primary btn-lg btn-block" type="submit">Ücretsiz analiz iste <Arrow size={15}/></button>
+              {err && <p className="form-err" role="alert">{err}</p>}
+              <button className="btn btn-primary btn-lg btn-block" type="submit" disabled={sending}>{sending ? 'Gönderiliyor…' : <>Ücretsiz analiz iste <Arrow size={15}/></>}</button>
               <p className="form-tos"><a href={`${BASE}kvkk.html`}>KVKK aydınlatma metnini</a> okuduğunuzu kabul edersiniz.</p>
             </> : <div className="form-ok">
               <span className="tick-lg"><Check size={24}/></span>

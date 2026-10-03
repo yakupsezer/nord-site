@@ -1,0 +1,2 @@
+[functions.contact-webhook]
+verify_jwt = false

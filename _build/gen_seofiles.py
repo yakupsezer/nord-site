@@ -72,7 +72,7 @@ ucuz tedarikçi bulmaktan değil tedarik yapısının kendisini değiştirmekten
 - Kuruluş: 2025, Ümraniye / İstanbul
 - Odak: SPK, BDDK ve TCMB düzenlemesi altındaki kurumlar ve teknoloji şirketleri
 - Taahhüt: sözleşmeye yazılan tasarruf oranı, 30 gün ihbarla fesih, uyum sorumluluğu Nord'da
-- İletişim: kurumsal@nord.services · +90 850 885 15 00
+- İletişim: kurumsal@nord.services
 - LinkedIn: {{LI}}
 
 ## Hizmet aileleri

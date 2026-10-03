@@ -65,7 +65,7 @@ ORGANIZATION = {
     "name": "Nord Kurumsal Hizmetler", "alternateName": "Nord",
     "url": SITE_URL + "/", "sameAs": [LINKEDIN],
     "logo": {"@type": "ImageObject", "url": LOGO, "width": 1754, "height": 594},
-    "email": "kurumsal@nord.services", "telephone": "+90-850-885-15-00",
+    "email": "kurumsal@nord.services",
     "address": {"@type": "PostalAddress",
                 "streetAddress": "İnkılap Mah. Dr. Adnan Büyükdeniz Cad. 2. Blok No:4, İç Kapı No:7",
                 "addressLocality": "Ümraniye", "addressRegion": "İstanbul", "addressCountry": "TR"},
