@@ -262,8 +262,10 @@ function CTASection() {
     company: '',
     size: '250–500',
     email: '',
-    phone: ''
+    phone: '',
+    website: ''
   });
+  const [startedAt] = useState(() => Date.now());
   const up = k => e => setF(s => ({
     ...s,
     [k]: e.target.value
@@ -280,9 +282,16 @@ function CTASection() {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${window.NORD_SUPABASE_KEY}`
         },
-        body: JSON.stringify(f)
+        body: JSON.stringify({
+          ...f,
+          elapsed: Date.now() - startedAt
+        })
       });
       const data = await res.json().catch(() => null);
+      if (res.status === 429) {
+        setErr('Kısa sürede çok fazla talep gönderildi. Lütfen daha sonra tekrar deneyin veya kurumsal@nord.services adresine yazın.');
+        return;
+      }
       if (!res.ok || !data || !data.success) throw new Error('send failed');
       setSent(true);
     } catch (_) {
@@ -356,6 +365,14 @@ function CTASection() {
     value: f.email,
     onChange: up('email'),
     placeholder: "ad@sirket.com"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "form-hp",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("label", null, "Web sitesi"), /*#__PURE__*/React.createElement("input", {
+    tabIndex: -1,
+    autoComplete: "off",
+    value: f.website,
+    onChange: up('website')
   })), err && /*#__PURE__*/React.createElement("p", {
     className: "form-err",
     role: "alert"
