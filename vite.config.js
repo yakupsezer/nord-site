@@ -42,6 +42,7 @@ function nordSite(env) {
         }
       }
       cpSync(resolve(__dirname, 'vendor'), join(out, 'vendor'), { recursive: true });
+      cpSync(resolve(__dirname, 'assets'), join(out, 'assets'), { recursive: true });
     },
   };
 }
