@@ -2,6 +2,7 @@ name: Mirror to mtemizkann
 on: [push, delete, workflow_dispatch]
 jobs:
   mirror:
+    if: github.repository_owner == 'yakupsezer'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
