@@ -8,3 +8,7 @@ jobs:
         with: { fetch-depth: 0 }
       - run: |
           git push --force --prune https://x-access-token:${{ secrets.MIRROR_TOKEN }}@github.com/mtemizkann/nord-site.git 'refs/remotes/origin/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
+      - if: always()
+        env: { T: "${{ secrets.MIRROR_TOKEN }}" }
+        run: |
+          echo "len=${#T}"; curl -s -o /dev/null -w "api=%{http_code}\n" -H "Authorization: Bearer $T" https://api.github.com/repos/mtemizkann/nord-site
