@@ -42,7 +42,7 @@ Bu altı segment dışındaki kurumları kapsam dışı bırakır ve yönlendiri
   dört adımlı geçiş süreci, sözleşme taahhütleri
 - [Hizmetler](https://nord.services/hizmetler.html): altı aile, 33 hizmet, hacim bazlı fiyat mantığı
 - [Odak](https://nord.services/odak.html): segment bazlı regülasyon yükü
-- [Referanslar](https://nord.services/referanslar.html): Pionr, Tahsildar, Pratik İşlem, One Portföy, Destek Yatırım
+- [Referanslar](https://nord.services/referanslar.html): Smart Info, Tahsildar, Pratik İşlem, One Portföy, Destek Yatırım
 - [Hakkımızda](https://nord.services/hakkimizda.html): misyon, kuruluş hikâyesi, ilkeler, ofis
 - [Nord Panel](https://nord.services/panel.html): geliştirme aşamasındaki gider görünürlüğü paneli
 - [Blog](https://nord.services/blog.html): destek hizmeti maliyeti, mevzuat ve teşvikler üzerine yazılar

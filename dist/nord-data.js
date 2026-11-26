@@ -3,10 +3,10 @@
 "use strict";
 window.NORD_SEGMENTS = [['01', 'Menkul Değerler & Aracı Kurumlar', 'SPK lisanslı personel zorunluluğu, iç kontrol ve teftiş yapısı, yatırımcı şikâyet süreçleri. Kadronun büyük bölümü lisanslı olmak zorunda olduğu için işe alım ve özlük hatası doğrudan denetim bulgusuna dönüşür.', ['Bordro', 'İşe alım', 'Teknopark']], ['02', 'Portföy Yönetim Şirketleri', 'Dar ama yüksek nitelikli kadro, SPK raporlaması ve performansa bağlı ücretlendirme. Destek fonksiyonlarını içeride kurmak, yönetilen varlığa oranla orantısız bir sabit maliyet yaratır.', ['Bordro', 'Ücret yönetimi', 'Sağlık']], ['03', 'Ödeme & Elektronik Para Kuruluşları', 'TCMB ve BDDK denetimi, TÖDEB üyeliği, PCI-DSS ve ISO 27001/22301 sertifikasyon yükü. Uyum takvimi kaçırıldığında maliyet ceza olarak geri döner.', ['İSG & Sağlık', 'Bordro', 'Teknopark']], ['04', 'Fintech Girişimleri', 'Hızlı büyüyen kadro, lisans başvuru süreçleri ve yatırımcı raporlaması. Ekip iki katına çıkarken İK altyapısını sıfırdan kurmak, ürün ekibinden zaman çalar.', ['İK outsource', 'İşe alım', 'Yan haklar']], ['05', 'Teknoloji Şirketleri', 'Ar-Ge yoğun kadro, teknopark statüsü ve nitelikli personel rekabeti. Teşviklerin eksiksiz kullanılması çoğu zaman yıllık kârın kendisinden büyük bir kalemdir.', ['Teknopark', 'İşe alım', 'Yan haklar']], ['06', 'Dijital Bankalar', 'BDDK uyum yükü, çok katmanlı yetkilendirme ve yüksek hacimli işe alım. Regülasyonun gerektirdiği kadro derinliği, destek fonksiyonlarında hızla maliyet birikimine dönüşür.', ['Bordro', 'Sağlık & Sigorta', 'Seyahat']]];
 window.NORD_REFS = [{
-  name: 'Pionr',
-  cat: 'Girişim & finansal altyapı',
-  desc: '160.000 KOBİ\'yi tek finansal omurgaya bağlayan girişim kurucusu. Portföyündeki şirketlerin destek fonksiyonlarını Nord üzerinden yönetiyor.',
-  url: 'https://pionr.com.tr/'
+  name: 'Smart Info',
+  cat: 'Fintech & veri teknolojileri',
+  desc: 'Finansal kurumlar için veri ve teknoloji çözümleri geliştiren fintech şirketi. Destek fonksiyonlarını Nord üzerinden yönetiyor.',
+  url: 'https://smartinfo.com.tr/'
 }, {
   name: 'Tahsildar',
   cat: 'Fintech · B2B tahsilat',
