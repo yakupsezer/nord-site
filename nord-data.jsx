@@ -8,7 +8,7 @@ window.NORD_SEGMENTS = [
 ];
 
 window.NORD_REFS = [
-  { name:'Pionr', cat:'Girişim & finansal altyapı', desc:'160.000 KOBİ\'yi tek finansal omurgaya bağlayan girişim kurucusu. Portföyündeki şirketlerin destek fonksiyonlarını Nord üzerinden yönetiyor.', url:'https://pionr.com.tr/' },
+  { name:'Smart Info', cat:'Fintech & veri teknolojileri', desc:'Finansal kurumlar için veri ve teknoloji çözümleri geliştiren fintech şirketi. Destek fonksiyonlarını Nord üzerinden yönetiyor.', url:'https://smartinfo.com.tr/' },
   { name:'Tahsildar', cat:'Fintech · B2B tahsilat', desc:'Bayi ve alt bayi tahsilatını tek platformda toplayan B2B ödeme orkestratörü. 50+ banka ve ödeme kuruluşu entegrasyonu.', url:'https://tahsildar.com.tr/' },
   { name:'Pratik İşlem', cat:'Ödeme & elektronik para kuruluşu', desc:'TCMB, BDDK ve TÖDEB lisanslı ödeme kuruluşu. PCI-DSS, ISO 27001, 22301 ve 20000-1 sertifikasyon kapsamında çalışıyor.', url:'https://pratikislem.com.tr/' },
   { name:'One Portföy', cat:'Portföy yönetim şirketi', desc:'SPK düzenlemesi altında faaliyet gösteren portföy yönetim şirketi. Nitelikli ve dar kadro yapısıyla destek fonksiyonlarını dışarıdan alıyor.', url:'https://oneportfoy.com.tr/' },

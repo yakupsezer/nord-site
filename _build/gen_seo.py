@@ -165,7 +165,7 @@ for path, title, desc, js, typ, crumb in [
   "Aracı kurumlar, portföy yönetim şirketleri, ödeme ve elektronik para kuruluşları, fintech girişimleri, teknoloji şirketleri ve dijital bankalar.",
   one("nord-page-odak.js"), "WebPage", "Odak"),
  ("referanslar.html", "Referanslar — Nord Kurumsal Hizmetler",
-  "Pionr, Tahsildar, Pratik İşlem, One Portföy ve Destek Yatırım dahil regüle finans ve teknoloji kurumları 2025 yılından bu yana Nord ile çalışıyor.",
+  "Smart Info, Tahsildar, Pratik İşlem, One Portföy ve Destek Yatırım dahil regüle finans ve teknoloji kurumları 2025 yılından bu yana Nord ile çalışıyor.",
   one("nord-page-referanslar.js"), "WebPage", "Referanslar"),
  ("panel.html", "Nord Panel — tek ekranda gider görünürlüğü",
   "Nord Panel, konsolide destek hizmetlerinizin gider ve tasarruf tablosunu tek ekranda gösterecek. Geliştirme aşamasında; bugün aynı veri atanmış hizmet yöneticisi ve aylık rapor üzerinden sunuluyor.",
